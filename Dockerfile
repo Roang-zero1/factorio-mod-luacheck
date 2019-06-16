@@ -9,6 +9,6 @@ LABEL "repository"="https://github.com/Roang-zero1/factorio-mod-actions"
 LABEL "homepage"="https://github.com/Roang-zero1/factorio-mod-actions"
 LABEL "maintainer"="Roang_zero1 <lucas@brandstaetter.tech>"
 
-ADD entrypoint.sh /entrypoint.sh
+COPY entrypoint.sh /entrypoint.sh
 
 ENTRYPOINT ["/entrypoint.sh"]

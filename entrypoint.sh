@@ -2,15 +2,15 @@
 
 if [ -z "$LUACHECKRC_URL" ]; then
   if [ ! -f .luacheckrc ]; then
-    echo "ERROR: No .luacheckrc present and no \$LUACHECKRC_URL provided" 1>&2
+    echo 'ERROR: No .luacheckrc present and no $LUACHECKRC_URL provided' 1>&2
     exit 1
   fi
 else
   echo "Downloading luacheckrc file from ${LUACHECKRC_URL}"
-  HTTP_RESPONSE=$(curl --write-out "HTTPSTATUS:%{http_code}"\
+  HTTP_RESPONSE=$(curl --write-out "HTTPSTATUS:%{http_code}" \
     -sSL \
     -o .luacheckrc \
-    $LUACHECKRC_URL )
+    $LUACHECKRC_URL)
 
   HTTP_STATUS=$(echo $HTTP_RESPONSE | tr -d '\n' | sed -e 's/.*HTTPSTATUS://')
   if [ $HTTP_STATUS -ne 200 ]; then
@@ -21,4 +21,3 @@ fi
 
 echo "Checking all lua files"
 luacheck .
-
