@@ -1,0 +1,9 @@
+name: "Factorio Mod luacheck"
+description: "Run a Factorio mod through luacheck."
+author: "Roang_zero1 <lucas@brandstaetter.tech>"
+branding:
+  icon: "check-square"
+  color: "gray-dark"
+runs:
+  using: "docker"
+  image: "Dockerfile"
