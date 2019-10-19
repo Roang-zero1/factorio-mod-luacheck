@@ -4,6 +4,11 @@ author: "Roang_zero1 <lucas@brandstaetter.tech>"
 branding:
   icon: "check-square"
   color: "gray-dark"
+inputs:
+  luacheckrc_url:
+    description: "URL to the luacheckrc configuration file to be used during checking."
+    required: false
+    default: "https://raw.githubusercontent.com/Nexela/Factorio-luacheckrc/0.17/.luacheckrc"
 runs:
   using: "docker"
   image: "Dockerfile"

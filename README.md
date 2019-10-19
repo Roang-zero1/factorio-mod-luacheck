@@ -18,17 +18,20 @@ jobs:
       - uses: actions/checkout@master
       - name: lint
         uses: Roang-zero1/factorio-mod-luacheck@master
-        env:
-          LUACHECKRC_URL: https://raw.githubusercontent.com/Nexela/Factorio-luacheckrc/0.17/.luacheckrc
+        with:
+          luacheckrc_url: https://raw.githubusercontent.com/Nexela/Factorio-luacheckrc/0.17/.luacheckrc
 ```
 
 ## Sample Workflow
 
 A sample workflow that uses this action can be found at [Roang-zero1/factorio-mod-actions](https://github.com/Roang-zero1/factorio-mod-actions/blob/master/sample/push-check-release.yml)
 
-## Environment Variables
+## Inputs
 
-- `LUACHECKRC_URL` use the luacheckrc at the provided URL instead of the one in the project
+### `luacheckrc_url`
+
+URL to the luacheckrc configuration file to be used during checking.  
+**Default**: <https://raw.githubusercontent.com/Nexela/Factorio-luacheckrc/0.17/.luacheckrc>
 
 ## Recommended luacheckrc
 
