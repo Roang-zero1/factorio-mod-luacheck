@@ -1,5 +1,7 @@
 # GitHub Action for luacheck
 
+![](https://github.com/Roang-zero1/factorio-mod-luacheck/workflows/Check%20&%20Release/badge.svg)
+
 This action will run your mod code through [luacheck](https://github.com/mpeterv/luacheck).
 
 ## Usage
