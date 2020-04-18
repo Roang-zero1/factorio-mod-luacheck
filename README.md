@@ -40,4 +40,4 @@ URL to the luacheckrc configuration file to be used during checking.
 For current luacheckrc to use with factorio I recommend [Nexela/Factorio-luacheckrc](https://github.com/Nexela/Factorio-luacheckrc)
 
 [release status]: https://github.com/Roang-zero1/factorio-mod-luacheck/workflows/Check%20&%20Release/badge.svg
-[release workflow]: https://github.com/Roang-zero1/factorio-mod-luacheck/actions?query=workflow%3A%22Check+%26+Release%22
+[release workflow]: https://github.com/Roang-zero1/factorio-mod-luacheck/actions
