@@ -34,6 +34,7 @@ A sample workflow that uses this action can be found at [Roang-zero1/factorio-mo
 
 URL to the luacheckrc configuration file to be used during checking.  
 **Default**: <https://raw.githubusercontent.com/Nexela/Factorio-luacheckrc/0.17/.luacheckrc>
+If you assign an empty string "" the .luacheck file from the working tree will be used.
 
 ## Recommended luacheckrc
 
