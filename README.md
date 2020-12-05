@@ -1,6 +1,6 @@
 # GitHub Action for luacheck
 
-![](https://github.com/Roang-zero1/factorio-mod-luacheck/workflows/Check%20&%20Release/badge.svg)
+[![release badge][release status]][release workflow]
 
 This action will run your mod code through [luacheck](https://github.com/mpeterv/luacheck).
 
@@ -39,3 +39,6 @@ If you assign an empty string "" the .luacheck file from the working tree will b
 ## Recommended luacheckrc
 
 For current luacheckrc to use with factorio I recommend [Nexela/Factorio-luacheckrc](https://github.com/Nexela/Factorio-luacheckrc)
+
+[release status]: https://github.com/Roang-zero1/factorio-mod-luacheck/workflows/Check%20&%20Release/badge.svg
+[release workflow]: https://github.com/Roang-zero1/factorio-mod-luacheck/actions
